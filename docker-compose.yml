@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:16.4
+    environment: 
+      POSTGRES_USER: ivan
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: vano-detail
+    ports:
+      - 1433:1433
+
+  vano-detail-api:
+    image: postgres:16.4

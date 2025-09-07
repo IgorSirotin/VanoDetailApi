@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanoDetail.Api", "src/VanoDetail.Api/VanoDetail.Api.csproj", "{F485724D-2773-4DDB-A402-D0CEBED9E8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanoDetail.Application", "src/VanoDetail.Application\VanoDetail.Application.csproj", "{CB1692CE-EF58-4890-A705-A48C3143DC1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanoDetail.Domain", "src/VanoDetail.Domain\VanoDetail.Domain.csproj", "{E0949DBA-EA8B-4CD2-8A9D-66D22AD791C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanoDetail.Storage", "src/VanoDetail.Storage\VanoDetail.Storage.csproj", "{F8850562-0D74-46BF-B359-42D006347C41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F485724D-2773-4DDB-A402-D0CEBED9E8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F485724D-2773-4DDB-A402-D0CEBED9E8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F485724D-2773-4DDB-A402-D0CEBED9E8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F485724D-2773-4DDB-A402-D0CEBED9E8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB1692CE-EF58-4890-A705-A48C3143DC1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB1692CE-EF58-4890-A705-A48C3143DC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB1692CE-EF58-4890-A705-A48C3143DC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB1692CE-EF58-4890-A705-A48C3143DC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0949DBA-EA8B-4CD2-8A9D-66D22AD791C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0949DBA-EA8B-4CD2-8A9D-66D22AD791C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0949DBA-EA8B-4CD2-8A9D-66D22AD791C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0949DBA-EA8B-4CD2-8A9D-66D22AD791C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8850562-0D74-46BF-B359-42D006347C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8850562-0D74-46BF-B359-42D006347C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8850562-0D74-46BF-B359-42D006347C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8850562-0D74-46BF-B359-42D006347C41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F485724D-2773-4DDB-A402-D0CEBED9E8D4} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{CB1692CE-EF58-4890-A705-A48C3143DC1A} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{E0949DBA-EA8B-4CD2-8A9D-66D22AD791C4} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{F8850562-0D74-46BF-B359-42D006347C41} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D84339E-6D1B-49C1-943B-4CAE65A4B25B}
+	EndGlobalSection
+EndGlobal
