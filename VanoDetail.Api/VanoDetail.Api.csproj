@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VanoDetail.Application\VanoDetail.Application.csproj" />
+    <ProjectReference Include="..\VanoDetail.Migrations\VanoDetail.Migrations.csproj" />
+    <ProjectReference Include="..\VanoDetail.Storage\VanoDetail.Storage.csproj" />
+  </ItemGroup>
+
+</Project>

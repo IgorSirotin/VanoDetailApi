@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.20" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.20">
+		<PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VanoDetail.Application\VanoDetail.Application.csproj" />
+    <ProjectReference Include="..\VanoDetail.Domain\VanoDetail.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<EmbeddedResource Include="Migrations/*" />
+  </ItemGroup>
+
+</Project>

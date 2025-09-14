@@ -1,0 +1,35 @@
+services:
+  vano-detail-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5140:8080
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - ConnectionStrings__Default=UserId=postgres;Host=db;Password=123;Database=vano_detail;Port=5432
+      - Logging__LogLevel__Default=Information
+      - Logging__LogLevel__Microsoft.AspNetCore=Warning
+      - Console__LogLevel__Default=Information
+
+  db:
+    image: postgres:16.4
+    environment:
+      POSTGRES_DB: vano_detail
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d vano_detail"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  postgres-data:
